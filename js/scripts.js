@@ -10,12 +10,12 @@ function isEmpty() {
   return false;
 }
   
-function checkSingleVowel(vowel){
-  if(vowels.includes(vowel.charAt(0))){
-    console.log(vowel);
+function checkSingleVowel(inputString){//vowel
+  if(vowels.includes(inputString.charAt(0))){
+    console.log(inputString);
     return true; // vowel
   } else {
-    console.log(vowel);
+    console.log(inputString);
     return false; // cosntanant
   }
 }
@@ -38,6 +38,7 @@ function handleFormSubmission(e){
 
   const inputString = document.getElementById("input-text").value;
   console.log("input-text: ", inputString);
+  
   console.log("checkSingleVowel: ", checkSingleVowel);
  
   // const stringToPigLatin = stringTranslator(inputString);
